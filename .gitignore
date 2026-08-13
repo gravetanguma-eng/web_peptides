@@ -1,0 +1,9 @@
+node_modules/
+.next/
+out/
+.astro/
+dist/
+.preview/
+playwright-report/
+test-results/
+.DS_Store
