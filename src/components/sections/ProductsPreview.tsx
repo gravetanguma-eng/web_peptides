@@ -13,8 +13,7 @@ export function ProductsPreview() {
           <SplitText text="Explore the peptide portfolio." className="type-section-title mt-8 max-w-5xl sm:whitespace-nowrap sm:text-[clamp(2.4rem,4.4vw,4.3rem)]" />
         </Reveal>
         <p className="ml-auto mt-10 max-w-xl text-[15px] leading-7 text-muted">
-          Catalogue structure is ready. Product identities and specifications remain explicit
-          placeholders until verified data is supplied.
+          Contact us via WhatsApp to purchase peptide products.
         </p>
         <div className="mt-16 grid gap-x-7 gap-y-14 sm:grid-cols-2 xl:grid-cols-4">
           {products.map((product, index) => (

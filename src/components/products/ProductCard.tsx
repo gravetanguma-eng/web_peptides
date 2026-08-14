@@ -19,6 +19,7 @@ export function ProductCard({ product }: { product: Product }) {
         <div>
           <p className="type-caption text-muted">{product.category}</p>
           <h3 className="mt-3 text-2xl tracking-[-0.04em]">{product.name}</h3>
+          <p className="mt-4 text-sm leading-6 text-muted">{product.summary}</p>
           {product.specification ? (
             <p className="mt-3 text-xs leading-5 text-muted">{product.specification}</p>
           ) : null}

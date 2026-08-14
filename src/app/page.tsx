@@ -12,9 +12,9 @@ export default function HomePage() {
     <main id="top">
       <Hero />
       <CompanyIntro />
+      <ProductsPreview />
       <Capabilities />
       <Quality />
-      <ProductsPreview />
       <FinalCta />
     </main>
   );

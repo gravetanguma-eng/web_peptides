@@ -60,10 +60,10 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               </div>
             ) : null}
             <p className="mt-6 text-[10px] uppercase tracking-[0.12em] text-lab-blue">
-              Placeholder product record — verification required
+              For experimental use only
             </p>
             <ActionLink href={companyLinks.whatsapp} external className="mt-10">
-              Discuss This Requirement
+              Contact us to purchase
             </ActionLink>
           </div>
         </div>

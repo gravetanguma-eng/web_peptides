@@ -27,10 +27,10 @@ export const company = {
     "We bring technical requirements, manufacturing planning and quality documentation into one clear conversation. Final company claims will be published only after verification.",
   companyStatement:
     "Peptide manufacturing, shaped around precision and clear collaboration.",
-  whatsappNumber: "",
+  whatsappNumber: "447848436280",
   whatsappMessage:
-    "Hello, I would like to discuss a peptide manufacturing requirement.",
-  email: "",
+    "Hello, I would like to know more information.",
+  email: "one441119@gmail.com",
   address: "",
   canonicalUrl: "https://example.com",
   researchUseNotice: "Product use statement pending legal and regulatory review.",
@@ -88,11 +88,7 @@ export const company = {
   ] satisfies QualityStandard[]
 } as const;
 
-const whatsappNumber: string = company.whatsappNumber;
-
 export const companyLinks = {
-  whatsapp: whatsappNumber
-    ? `https://wa.me/${whatsappNumber.replace(/\D/g, "")}?text=${encodeURIComponent(company.whatsappMessage)}`
-    : `https://wa.me/?text=${encodeURIComponent(company.whatsappMessage)}`,
+  whatsapp: "https://wa.me/message/2BPFPF6XUTS6M1",
   email: company.email ? `mailto:${company.email}` : ""
 };
