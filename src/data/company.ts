@@ -90,5 +90,7 @@ export const company = {
 
 export const companyLinks = {
   whatsapp: "https://wa.me/message/2BPFPF6XUTS6M1",
+  products: "https://peptinovasale.com/collections/all-product",
   email: company.email ? `mailto:${company.email}` : ""
 };
+

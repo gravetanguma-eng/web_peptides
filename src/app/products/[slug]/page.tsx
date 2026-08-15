@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft } from "lucide-react";
 import { ActionLink } from "@/components/ui/ActionLink";
+import { FloatingBackLink } from "@/components/ui/FloatingBackLink";
 import { companyLinks } from "@/data/company";
 import { products } from "@/data/products";
 
@@ -32,10 +31,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
   return (
     <main className="min-h-screen bg-warm-white pb-28 pt-36">
       <div className="page-container">
-        <Link href="/products" className="inline-flex items-center gap-2 text-xs font-semibold">
-          <ArrowLeft aria-hidden="true" className="size-4" />
-          Back to products
-        </Link>
+        <FloatingBackLink href="/products">Back to products</FloatingBackLink>
         <div className="mt-14 grid gap-14 lg:grid-cols-[1fr_.9fr] lg:gap-24">
           <div className="relative aspect-square overflow-hidden bg-white">
             <Image
@@ -62,8 +58,8 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
             <p className="mt-6 text-[10px] uppercase tracking-[0.12em] text-lab-blue">
               For experimental use only
             </p>
-            <ActionLink href={companyLinks.whatsapp} external className="mt-10">
-              Contact us to purchase
+            <ActionLink href={companyLinks.products} external className="mt-10">
+              Check prices
             </ActionLink>
           </div>
         </div>
@@ -71,3 +67,4 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
     </main>
   );
 }
+

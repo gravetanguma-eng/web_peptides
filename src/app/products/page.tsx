@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
 import { ProductCard } from "@/components/products/ProductCard";
+import { FloatingBackLink } from "@/components/ui/FloatingBackLink";
 import { products } from "@/data/products";
 
 export const metadata: Metadata = {
@@ -13,13 +12,7 @@ export default function ProductsPage() {
   return (
     <main className="min-h-screen bg-warm-white pb-28 pt-40">
       <div className="page-container">
-        <Link
-          href="/"
-          className="inline-flex min-h-11 items-center gap-3 border border-ink/25 px-5 text-sm font-semibold transition-colors duration-300 hover:border-ink hover:bg-ink hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lab-blue motion-reduce:transition-none"
-        >
-          <ArrowLeft aria-hidden="true" className="size-4" strokeWidth={1.5} />
-          Back to Homepage
-        </Link>
+        <FloatingBackLink href="/">Back to Homepage</FloatingBackLink>
         <p className="type-eyebrow mt-14 text-muted">Product catalogue</p>
         <h1 className="type-display mt-8 max-w-5xl">
           Peptide products, clearly specified.
@@ -37,3 +30,4 @@ export default function ProductsPage() {
     </main>
   );
 }
+

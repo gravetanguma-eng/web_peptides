@@ -2,6 +2,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { SplitText } from "@/components/effects/SplitText";
 import { ProductCard } from "@/components/products/ProductCard";
 import { ActionLink } from "@/components/ui/ActionLink";
+import { companyLinks } from "@/data/company";
 import { products } from "@/data/products";
 
 export function ProductsPreview() {
@@ -23,9 +24,10 @@ export function ProductsPreview() {
           ))}
         </div>
         <div className="mt-14 flex justify-end">
-          <ActionLink href="/products">View All Products</ActionLink>
+          <ActionLink href={companyLinks.products} external>View All Products</ActionLink>
         </div>
       </div>
     </section>
   );
 }
+

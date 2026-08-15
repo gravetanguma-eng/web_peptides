@@ -31,7 +31,7 @@ export function Footer() {
 
           <div className="flex flex-col items-start gap-2.5">
             <p className="footer-label">Products</p>
-            <Link href="/products">Product catalogue</Link>
+            <a href={companyLinks.products} target="_blank" rel="noreferrer">Product catalogue</a>
             <Link href="/#manufacturing">Capabilities</Link>
           </div>
 
@@ -63,3 +63,4 @@ export function Footer() {
     </footer>
   );
 }
+

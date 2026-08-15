@@ -12,7 +12,7 @@ const navigation = [
   { label: "About", href: "/#about" },
   { label: "Manufacturing", href: "/#manufacturing" },
   { label: "Quality", href: "/#quality" },
-  { label: "Products", href: "/products" },
+  { label: "Products", href: companyLinks.products, external: true },
   { label: "Contact", href: "/#contact" }
 ];
 
@@ -93,7 +93,13 @@ export function Header() {
 
           <nav className="hidden items-center gap-8 text-xs font-medium lg:flex" aria-label="Primary">
             {navigation.map((item) => (
-              <Link key={item.label} href={item.href} className="nav-link">
+              <Link
+                key={item.label}
+                href={item.href}
+                className="nav-link"
+                target={item.external ? "_blank" : undefined}
+                rel={item.external ? "noreferrer" : undefined}
+              >
                 {item.label}
               </Link>
             ))}
@@ -148,6 +154,8 @@ export function Header() {
             <Link
               key={item.label}
               href={item.href}
+              target={item.external ? "_blank" : undefined}
+              rel={item.external ? "noreferrer" : undefined}
               onClick={() => setOpen(false)}
               className="flex items-baseline gap-5 py-2 text-[clamp(2.2rem,11vw,4rem)] leading-none tracking-[-0.06em]"
             >
@@ -165,3 +173,4 @@ export function Header() {
     </>
   );
 }
+

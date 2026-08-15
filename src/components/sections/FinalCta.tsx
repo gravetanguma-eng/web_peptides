@@ -12,9 +12,10 @@ export function FinalCta() {
         <TextType as="h2" text="Ready to discuss your peptide requirements?" className="type-section-title mt-10 min-h-[1.9em] max-w-6xl" />
         <div className="mt-14 flex flex-col gap-3 sm:flex-row">
           <ActionLink href={companyLinks.whatsapp} external variant="whatsapp">Chat on WhatsApp</ActionLink>
-          <ActionLink href="/products" variant="outline">Explore Products</ActionLink>
+          <ActionLink href={companyLinks.products} external variant="outline">Explore Products</ActionLink>
         </div>
       </div>
     </section>
   );
 }
+

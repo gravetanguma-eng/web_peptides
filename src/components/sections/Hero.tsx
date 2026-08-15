@@ -74,7 +74,7 @@ export function Hero() {
             <ActionLink href={companyLinks.whatsapp} external variant="whatsapp">
               Contact Us on WhatsApp
             </ActionLink>
-            <ActionLink href="/products" variant="outline">
+            <ActionLink href={companyLinks.products} external variant="outline">
               Explore Our Products
             </ActionLink>
           </div>
@@ -83,3 +83,4 @@ export function Hero() {
     </section>
   );
 }
+
